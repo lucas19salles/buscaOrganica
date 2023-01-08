@@ -68,7 +68,7 @@ nav a {
   color: var(--color-title);
 }
 
-nav a:after {
+.menu:after {
   content: "";
   display: block;
   height: 2px;
@@ -79,7 +79,7 @@ nav a:after {
   position: absolute;
 }
 
-nav a:hover:after {
+.menu:hover::after {
   width: 100%;
 }
 
@@ -88,6 +88,11 @@ nav a:hover:after {
   color: var(--color-white);
   background-color: var(--color-rox);
   box-shadow: 4px 4px 0px 0px rgba(234, 76, 122, 0.8);
+}
+
+.last:hover {
+  background-color: var(--color-aqua);
+  transition: 0.6s;
 }
 
 .banner {
